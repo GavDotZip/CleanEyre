@@ -1,0 +1,217 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-Jan-2021, 20:40:30
+    Author     : gavin
+*/
+
+/*header Clean Eyre*/ 
+h1{  
+    text-align: center;  
+    color: whitesmoke;  
+    padding: 20px;  
+}  
+
+logo{
+    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+}
+
+/*keeps Sign Up and Log In side by side*/
+*, *:before, *:after { 
+  box-sizing: border-box;
+}
+
+/*ensure scroll bar if needed on y-axis*/
+html {
+  overflow-y: scroll;
+}
+
+/*background image and body styling*/
+body {
+  background: url("C:/Users/gavin/OneDrive/Documents/CleanEyre/images/loginsnap_1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  font-family: 'Manjari', sans-serif;
+}
+
+/*styling for <a>*/
+a {
+  text-decoration: none;
+  color: #1da1f2;
+  transition: .5s ease; /*transition on <a>*/
+}
+
+/*<a> when hovered on*/
+a:hover {
+  color: #0080ff;
+}
+
+/*styling for backdrop*/
+.form {
+  background: rgb(22, 88, 21, 0.9);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+/*styling for area of sign up log in tabs*/
+.top-area {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.top-area:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-area li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+.top-area li a:hover {
+  background: #169103;
+  color: #ffffff;
+}
+.top-area .active a {
+  background: #16F612;
+  color: #ffffff;
+}
+ 
+/*actual content of sign up or log in window*/
+.tab-content > div:last-child {
+  display: none;
+}
+ 
+/*header on each window*/
+h2 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+/*input areas*/
+/*makes placeholder smaller once typing initiated*/
+label {
+  position: absolute;
+  /*for scaling input area text*/
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+  
+}
+
+
+label .req {
+  margin: 2px;
+  color: #16F612;
+}
+
+label.active {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  left: 2px;
+  font-size: 14px;
+}
+
+label.active .req {
+  opacity: 0;
+}
+
+label.highlight {
+  color: #ffffff;
+}
+
+input, textarea {
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  height: 50px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #169103;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+  
+  
+}
+
+.label-field {
+  position: relative;
+  margin-bottom: 40px;
+  
+}
+
+/*styling for the buttons*/
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #16F612;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+  background: #169103;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.guest {
+  margin-top: -20px;
+  text-align: right;
+}
+
+span{
+    height: 30px;
+}
+
+@media (max-width: 765px) {
+    label {
+      left: 0;
+    }    
+}
