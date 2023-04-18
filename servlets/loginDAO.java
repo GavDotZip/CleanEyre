@@ -7,7 +7,7 @@ public class loginDAO {
         try{  
             Class.forName("com.mysql.jdbc.Driver");  
             Connection con=DriverManager.getConnection(  
-                // user database
+            "jdbc:mysql://mysql1.it.nuigalway.ie:3306/mydb6348","mydb6348cg","ja6pen");  
      
             PreparedStatement ps=con.prepareStatement( "select * from user where name=? and pass=?");  
             ps.setString(1,name);  
