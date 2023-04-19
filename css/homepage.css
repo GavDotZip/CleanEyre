@@ -58,14 +58,23 @@
 	text-align: center;
 }
 
-#banner-row a{
+/* #banner-row a{
 	background-color: white !important;
 	color: black !important;
 	border: none;
 	margin-left: 20px;
 	margin-top: 20px;
 	
-}
+} */
+#banner-row a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  #banner-row  a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
 #banner-col{
 	padding-left: 20px;
 }
