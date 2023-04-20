@@ -55,17 +55,10 @@
 #banner-row h3, p{
 	padding-left: 20px;
 	padding-top: 20px;
-	text-align: center;
+	text-align: justify;
+    text-justify: inter-word;
 }
 
-/* #banner-row a{
-	background-color: white !important;
-	color: black !important;
-	border: none;
-	margin-left: 20px;
-	margin-top: 20px;
-	
-} */
 #banner-row a:link {
     background-color: transparent;
     text-decoration: none;
@@ -84,8 +77,14 @@
 	padding-bottom: 80px;
 }
 
+
 #service h1{
 	padding-bottom: 70px;
+}
+
+#service p{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 /* about */
