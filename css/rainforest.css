@@ -55,8 +55,8 @@
 #banner-row h3, p{
 	padding-left: 20px;
 	padding-top: 20px;
-	text-align: justify;
-    text-justify: inter-word;
+	text-align: center;
+
 }
 
 #banner-row a:link {
@@ -82,10 +82,10 @@
 	padding-bottom: 70px;
 }
 
-#service p{
+/* #service p{
     text-align: justify;
     text-justify: inter-word;
-}
+} */
 
 /* about */
 
